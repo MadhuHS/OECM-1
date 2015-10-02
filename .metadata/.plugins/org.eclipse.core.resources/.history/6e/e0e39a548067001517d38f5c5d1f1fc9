@@ -1,0 +1,23 @@
+package com.jspiders.intents;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.widget.TextView;
+
+public class SecondActivity extends Activity {
+
+	TextView outputtextview;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_second);
+		
+		outputtextview = (TextView) findViewById(R.id.textViewoutput);
+		
+		Intent intent= getIntent();
+		
+	}
+
+
+}

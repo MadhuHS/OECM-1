@@ -17,7 +17,7 @@ public class SecondActivity extends Activity {
 		
 		Intent intent= getIntent();
 		Bundle b1 = intent.getExtras();
-		String s1 =b1.getString("Key1");
+		String s1 =b1.getString("key1");
 		outputtextview.setText(s1);
 		
 	}

@@ -28,7 +28,9 @@ public class MainActivity extends Activity {
 				String i1 = inputedittext.getText().toString();
 				
 				Intent intent = new Intent(MainActivity.this,SecondActivity.class);
-				intent.putExtra("Key1",i1);
+				
+				intent.putExtra("Key2",i1);
+
 				startActivity(intent);
 				
 			}
