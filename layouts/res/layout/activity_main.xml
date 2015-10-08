@@ -1,0 +1,23 @@
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/Relative_layout"
+     android:layout_width="match_parent"
+     android:layout_height="300dp"
+     android:background="#33CCEE">
+    
+    <RelativeLayout android:id="@+id/Relative2"
+        android:layout_height="200dp"
+        android:layout_width="match_parent" 
+        android:background="#AAEECC">
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Relative layout 1" />
+        
+    </RelativeLayout>
+    
+</RelativeLayout> 

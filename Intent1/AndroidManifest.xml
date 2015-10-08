@@ -24,8 +24,25 @@
         </activity>
         <activity
             android:name="com.jsp.intent1.SecondActivity"
-            android:label="@string/title_activity_second" >
+            android:label="@string/title_activity_second">
+
+
+                 <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>			
         </activity>
     </application>
 
 </manifest>
+
+
+
+
+
+
+
+
+
+
