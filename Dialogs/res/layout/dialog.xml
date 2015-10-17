@@ -9,6 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
         android:hint="Username" >
 
         <requestFocus />
@@ -20,6 +22,7 @@
         android:layout_height="wrap_content"
         android:paddingTop="15dp"
         android:ems="10"
+        android:paddingBottom="15dp"
         android:hint="Password" />
 
 </LinearLayout>

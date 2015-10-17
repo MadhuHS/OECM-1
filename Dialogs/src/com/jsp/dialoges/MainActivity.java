@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.content.DialogInterface.OnMultiChoiceClickListener;
@@ -96,15 +97,25 @@ public class MainActivity extends Activity {
 	
 	public void login(View v)
 	{
+		View v1;
 		AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-		
-		View view;
-		
-		LayoutInflater inflater = getLayoutInflater();
-		view = inflater.inflate(R.layout.dialog,null);
-		builder.setTitle("Login to APP");
-		builder.setView(view);
-		builder.setPositiveButton("Login",new OnClickListener() {
+	    builder.setTitle("Login To App");
+	    
+	    LayoutInflater inflater = getLayoutInflater();
+	    
+	    v1 = inflater.inflate(R.layout.dialog,null);
+	    builder.setView(v1);
+	    
+	    builder.setPositiveButton("Login", new OnClickListener() {
+			
+			@Override
+			public void onClick(DialogInterface arg0, int arg1) {
+				
+				
+			}
+		});
+	    
+	    builder.setNegativeButton("Cancel", new OnClickListener() {
 			
 			@Override
 			public void onClick(DialogInterface arg0, int arg1) {
@@ -112,10 +123,17 @@ public class MainActivity extends Activity {
 				
 			}
 		});
+	    
+	    AlertDialog dialog = builder.create();
+		dialog.show();
+	   
 		
 		
-		AlertDialog d1 = builder.create();
-		d1.show();
+		
+		
+		
+		
+		
 	}
 	
 	
